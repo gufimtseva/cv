@@ -1,5 +1,3 @@
-![cv](https://github.com/BartoszJarocki/cv/assets/1017620/79bdb9fc-0b20-4d2c-aafe-0526ad4a71d2)
-
 # Minimalist CV [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBartoszJarocki%2Fcv)
 
 Simple web app that renders minimalist CV with print-friendly layout.
@@ -15,11 +13,20 @@ Built with Next.js and shadcn/ui, deployed on Vercel.
 - Optimized for Next.js and Vercel
 
 # Getting Started Locally
+### Prerequisites
+
+You need the following properly installed before being able to run this project:
+
+- [Node](https://nodejs.org/en/download/)
+- [NPM](https://www.npmjs.com/get-npm) (which is bundled with Node)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+
+### Set up the project
 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/BartoszJarocki/cv.git
+   git clone https://github.com/gufimtseva/cv.git
    ```
 
 2. Move to the cloned directory
