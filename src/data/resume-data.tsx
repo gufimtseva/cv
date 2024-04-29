@@ -22,14 +22,20 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "Galina Ufimtseva",
   initials: "GU",
-  location: "Mississauga, ON, Canada (valid work permit)",
+  location: "Mississauga, ON, Canada (work permit)",
   locationLink: "https://www.google.com/maps/place/Mississauga",
   about:
     "QA Engineer with a love for high-quality software",
   summary:
-    "9+ years of expertise in testing of desktop applications, web interfaces, and API for big FinTech company. Successfully led and maintained the assurance process for 12 transport e-card software products used in several countries. Experienced in functional, regression, integration, exploratory, security, usability and user acceptance testing, to ensure software adheres to functional and non-functional requirements. Managed a QA team for 7 years, honing strong leadership and mentorship skills. Launched 4 major business projects and conducted extensive training for junior testers that upskilled over 150 employees in quality assurance best practices. Skilled in collaborating with developers to identify and resolve issues. Conducted effective testing in the absence of specifications.",
+    "9+ years of expertise in testing of desktop applications, web interfaces, and API for FinTech company."+
+    " Successfully led and maintained the assurance process for 12 transport e-card software products used in several countries."+
+    " Experienced in functional, regression, integration, exploratory, security, usability and user acceptance testing."+
+    " Managed a QA team for 7 years, honing strong leadership and mentorship skills."+
+    " Launched 4 major business projects and conducted extensive training for junior testers that upskilled over 150 employees in quality assurance best practices."+
+    " Skilled in collaborating with developers to identify and resolve issues. Conducted effective testing in the absence of specifications.",
   avatarUrl: "https://avatars.githubusercontent.com/u/71631431?v=4",
   //personalWebsiteUrl: "https://jarocki.me",
+  personalWebsiteUrl: "",
   contact: {
     email: "g.s.ufimtseva@gmail.com",
     tel: "+14166595727",
