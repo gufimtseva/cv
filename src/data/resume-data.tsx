@@ -18,6 +18,7 @@ import {
   YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { ResumeData } from "@/data/types";
 
 export const RESUME_DATA = {
   name: "Galina Ufimtseva",
@@ -25,17 +26,12 @@ export const RESUME_DATA = {
   location: "Mississauga, ON, Canada (work permit)",
   locationLink: "https://www.google.com/maps/place/Mississauga",
   about:
-    "QA Engineer with a love for high-quality software",
+    //"QA Engineer (9+ years experience) | Team Leader",
+    "Senior QA Engineer | Team Leader | Mentoring & Training",
   summary:
-    "9+ years of expertise in testing of desktop applications, web interfaces, and API for FinTech company."+
-    " Successfully led and maintained the assurance process for 12 transport e-card software products used in several countries."+
-    " Experienced in functional, regression, integration, exploratory, security, usability and user acceptance testing."+
-    " Managed a QA team for 7 years, honing strong leadership and mentorship skills."+
-    " Launched 4 major business projects and conducted extensive training for junior testers that upskilled over 150 employees in quality assurance best practices."+
-    " Skilled in collaborating with developers to identify and resolve issues. Conducted effective testing in the absence of specifications.",
+    "Software Test Engineer with 9+ years of desktop, web, and API testing expertise within a big Fintech company. Led quality assurance for 12 multi-national transport e-card software products, managing a QA team for 7 years and launching 4 major business projects. Proficient in various testing types, including functional, regression, system integration, exploratory, UAT and maintenance testing. Skilled in leading training programs for junior testers that enhanced the skills of over 150 employees. Experienced in performing tests without specifications and effectively troubleshooting issues with developers.",
   avatarUrl: "https://avatars.githubusercontent.com/u/71631431?v=4",
-  //personalWebsiteUrl: "https://jarocki.me",
-  personalWebsiteUrl: "",
+  personalWebsiteUrl: "https://gufimtseva.ca/",
   contact: {
     email: "g.s.ufimtseva@gmail.com",
     tel: "+14166595727",
@@ -77,12 +73,20 @@ export const RESUME_DATA = {
       link: "https://www.linkedin.com/company/cft/",
       badges: ["Hybrid"],
       title: "Senior QA Engineer, Team Leader",
-      //logo: ClevertechLogo,
       start: "2020",
       end: "2022 (2 yrs 1 mo)",
-      description:
-        "My role: product quality control and assistance in testing, requirement analysis, management of the development team (8 people), planning of teamwork, training new team members"+
-        ", interaction with related departments and customers",
+      //description:
+      summary: "",
+      bullets: [
+        "Test Management: Engineered and oversaw comprehensive test plans and test cases, achieving 95% feature coverage and robust regression testing across all functionalities, resulting in 0 to 2 post-release defects.",
+        "Environment Management: Maintained 20 diverse test environments on multiple OS platforms, integrating with various hardware such as card readers and printers.",
+        "Automation and Efficiency: Orchestrated a Python-based automation project for REST API testing, resulting in a 50% reduction in testing time and a 40% increase in overall testing coverage, bolstering software quality and release frequency.",
+        "Project Leadership: Led the entire SDLC for 4 valuable business projects, from requirements analysis to user training, cutting documentation update times by 67%.",
+        "Collaboration and Quality Improvement: Strengthened collaborations with developers and stakeholders, translating over 200 customer requirements into development scenarios and refining product design for 5 new products.",
+        "Release Coordination: Directed release planning and execution for an 8-person team, managing software rollouts across 23 regions to ensure alignment and timely delivery.",
+        "Team Development and Training: Developed 25+ step-by-step training guides for team products and processes, significantly reducing onboarding time by 30%. Delivered training sessions, enhancing team proficiency.",
+        "Performance Management: Mentored new team members across roles (6 QA specialists, 2 developers, 1 analyst) guiding their progression to advanced positions. Conducted 15 performance reviews, actively promoting continuous development and performance improvements.",
+        ],
     },
     {
       company: "Center of Financial Technologies (CFT)",
@@ -92,8 +96,17 @@ export const RESUME_DATA = {
       //logo: JojoMobileLogo,
       start: "2015",
       end: "2020 (5 yrs 6 mos)",
-      description:
-        "Planned, designed, and executed manual testing of Desktop applications, Web interfaces and SOAP/REST APIs for e-transport card emission",
+      summary: "",
+      bullets: [
+          "Planned, designed, and executed manual testing of Desktop applications, Web interfaces and SOAP/REST APIs for e-transport card emission.",
+          "Configured test environments on Windows and Unix operating systems.",
+          "Prepared test, product and user documentation, ensuring accuracy and up-to-date technical information.",
+          "Analyzed requirements of specifications and new tasks.",
+          "Performed practical product demonstrations for stakeholders.",
+          "Advised customers and colleagues.",
+          "Managed QA team.",
+          "Trained new QA specialists.",
+      ],
     },
     {
       company: "Center of Financial Technologies (CFT)",
@@ -103,178 +116,94 @@ export const RESUME_DATA = {
       //logo: NSNLogo,
       start: "2012",
       end: "2015 (2 yrs 4 mos)",
-      description: "Planned, designed and executed functional and regression testing of Desktop applications",
+      summary: "",
+      bullets: [
+        "Planned, designed and executed functional and regression testing of Desktop applications.",
+        "Upgraded test documentation and user manuals.",
+        "Demonstrated released versions.",
+      ],
     },
   ],
-  skills: [
-    "Java",
-    "Python",
-    "SQL",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
-  ],
+  skills: {
+    "": [
+      "Functional Testing",
+      "Requirements Analysis",
+      "Test Design",
+      "Test Documentation",
+      "Leadership",
+    ],
+    "Languages/Formats": [
+      "Java",
+      "Python",
+      "SQL",
+      "HTML/CSS",
+      "Markdown",
+      "XML/XSD",
+      "JSON",
+    ],
+    "Technologies": [
+      "Jira (+ Scrum/Structure Boards)",
+      "Confluence (+ Gliffy)",
+      "Postman",
+      "Swagger",
+      "SoapUI",
+      "Jmeter",
+      "Playwright",
+      "PL/SQL Developer",
+      "Oracle Database",
+      "VS Code",
+      "IntelliJ",
+      "Overleaf",
+      "Git (Bitbucket, GitHub)",
+      "Docker",
+      "Linux",
+      "Oracle VM VirtualBox",
+      "CI/CD (Atlassian Bamboo)",
+      "Grafana",
+      "Miro Boards",
+      "Xmind",
+      "Altova XMLSpy",
+      "Help&Manual",
+      "Microsoft Office",
+      "Microsoft Teams",
+      "Slack",
+      "ChatGPT",
+      "Agile (Scrum)",
+    ],
+  },
   projects: [
     {
-      title: "Consultly",
-      techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-      ],
-      description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
+      title: "Test report",
+      techStack: ["Exploratory Testing", "Notion"],
+      description:
+        "Exploratory Testing Report for Inworld Studio (the platform for generating lifelike AI characters)",
+      //logo: TastyCloudLogo,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        //label: "Test report for Inworld Studio",
+        href: "https://mahogany-pressure-ffa.notion.site/Exploratory-Testing-Report-e08374eee03e4790b2a098047bf25617",
       },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
+      title: "Bug report",
+      techStack: ["GitHub", "Markdown", "Defect Managing"],
       description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
+        "Bug reports for VanHack (the platform that helps Tech Professionals get a job)",
+      //logo: TastyCloudLogo,
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        //label: "Bug report for VanHack",
+        href: "https://github.com/gufimtseva/Bug-reports/blob/master/VanHack/VanHack.MD",
       },
     },
     {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
+      title: "Autotests project",
+      techStack: ["Autotesting", "Playwright", "VS Code"],
       description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
+        "The Playwright autotests project for the web application Stickerfy",
+      //logo: TastyCloudLogo,
       link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
+        //label: "StickerfyTestsPlaywright",
+        href: "https://github.com/gufimtseva/StickerfyTestsPlaywright",
       },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
-    },
-    {
-      title: "Evercast",
-      techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
-      link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
-      },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
     },
   ],
 } as const;

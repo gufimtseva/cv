@@ -131,9 +131,23 @@ export default function Page() {
                     {work.title}
                   </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
+
+                <CardContent className="mt-2">
+                  {work.summary && (
+                    <h4 className={"leading-5 text-muted-foreground"}>{work.summary}</h4>
+                  )}
+                  {work.summary && work.bullets?.length && (
+                    <div className="mt-2" />
+                  )}
+                  {work.bullets?.length && (
+                    <ul className="list-disc list-inside text-s accent-gray-800">
+                      {work.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  )}
                 </CardContent>
+
               </Card>
             );
           })}
@@ -158,13 +172,21 @@ export default function Page() {
             );
           })}
         </Section>
+        
         <Section>
           <h2 className="text-xl font-bold">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
+          {Object.entries(RESUME_DATA.skills).map(([category, skills]) => {
+            return (
+              <>
+                <h3 className="text-lg font-semibold">{category}</h3>
+                <div className="flex flex-wrap gap-1">
+                  {skills.map((skill) => {
+                    return <Badge key={skill}>{skill}</Badge>;
+                  })}
+                </div>
+              </>
+            );
+          })}
         </Section>
 
         <Section className="print-force-new-page scroll-mb-16">
