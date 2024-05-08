@@ -172,7 +172,7 @@ export default function Page() {
             );
           })}
         </Section>
-        
+
         <Section>
           <h2 className="text-xl font-bold">Skills</h2>
           {Object.entries(RESUME_DATA.skills).map(([category, skills]) => {
@@ -211,7 +211,8 @@ export default function Page() {
         links={[
           {
             url: RESUME_DATA.personalWebsiteUrl,
-            title: "Personal Website",
+            //title: "Personal Website",
+            title: "ISTQB® Certified Credential Badge",
           },
           ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
             url: socialMediaLink.url,

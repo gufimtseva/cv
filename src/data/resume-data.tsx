@@ -27,11 +27,12 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Mississauga",
   about:
     //"QA Engineer (9+ years experience) | Team Leader",
-    "Senior QA Engineer | Team Leader | Mentoring & Training",
+    "Senior QA Engineer | Team Leader | ISTQB Certified",
   summary:
-    "Software Test Engineer with 9+ years of desktop, web, and API testing expertise within a big Fintech company. Led quality assurance for 12 multi-national transport e-card software products, managing a QA team for 7 years and launching 4 major business projects. Proficient in various testing types, including functional, regression, system integration, exploratory, UAT and maintenance testing. Skilled in leading training programs for junior testers that enhanced the skills of over 150 employees. Experienced in performing tests without specifications and effectively troubleshooting issues with developers.",
+    "Certified Software Test Engineer with 9+ years of desktop, web, and API testing expertise within a big Fintech company. Led quality assurance for 12 multi-national transport e-card software products, managing a QA team for 7 years and launching 4 major business projects. Proficient in various testing types, including functional, regression, system integration, exploratory, UAT and maintenance testing. Skilled in leading training programs for junior testers that enhanced the skills of over 150 employees. Experienced in performing tests without specifications and effectively troubleshooting issues with developers.",
   avatarUrl: "https://avatars.githubusercontent.com/u/71631431?v=4",
-  personalWebsiteUrl: "https://gufimtseva.ca/",
+  //personalWebsiteUrl: "https://gufimtseva.ca/",
+  personalWebsiteUrl: "https://app.skillsclub.com/credential/62135-8a4e2c0943c512a10351e1a5714480c93bddab561fc4a8558ef9d38431ece559?locale=en&badge=true",
   contact: {
     email: "g.s.ufimtseva@gmail.com",
     tel: "+14166595727",
@@ -169,6 +170,9 @@ export const RESUME_DATA = {
       "Slack",
       "ChatGPT",
       "Agile (Scrum)",
+    ],
+    "Certifications": [
+      "ISTQB® Certified Tester Foundation Level 4.0 (May 2024)",
     ],
   },
   projects: [
