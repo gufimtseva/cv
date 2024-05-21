@@ -98,6 +98,35 @@ export default function Page() {
             {RESUME_DATA.summary}
           </p>
         </Section>
+
+        <Section>
+          <h2 className="text-xl font-bold">Certifications</h2>
+          {RESUME_DATA.certifications.map((certifications) => {
+            return (
+              <Card key={certifications.name}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                    <a
+                      className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                      href={certifications.certificateLink}
+                      target="_blank"
+                    > 
+                      {certifications.name}
+                    </a> 
+                    <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground"></p>
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {certifications.issued}
+                    </div>
+                  </div>
+                  </CardHeader>
+                <CardContent className="mt-2">{certifications.issuedBy}</CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {

@@ -32,6 +32,13 @@ export type Work = {
   bullets?: string[];
 };
 
+export type Certification = {
+  name: string;
+  certificateLink: string;
+  issuedBy?: string;
+  issued: string;
+};
+
 export type ProjectLink = {
   label: string;
   href: string;
@@ -60,5 +67,6 @@ export type ResumeData = {
   readonly skills: {
     readonly [key: string]: string[];
   };
+  readonly certifications: Certification[];
   readonly projects: Project[];
 };
